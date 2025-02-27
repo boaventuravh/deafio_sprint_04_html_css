@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    
+}
+
+.cabecalho__menu_navegacao{
+    position: absolute;
+    right: 50%;
+    translate: 50%;
+}
+
+.cabecalho__menu_navegacao__link{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: #0000CD;
+}
