@@ -1,0 +1,21 @@
+.rodape{
+    background-color: #000080;
+    color: #FFFFFF;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.rodape__redes_sociais{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__logotipo{
+    position: absolute;
+    left: 90%;
+    translate: 50%;
+}
