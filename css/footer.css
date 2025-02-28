@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .rodape{
     background-color: #000080;
     color: #FFFFFF;
+    font-family: "Roboto", serif;
+    font-size: 21px;
     display: flex;
     padding: 20px;
     width: 100%;
@@ -16,6 +20,6 @@
 
 .rodape__logotipo{
     position: absolute;
-    left: 90%;
+    left: 87%;
     translate: 50%;
 }
