@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .principal_lancamento{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    font-family: "Roboto", serif;
+    font-size: 21px;
 }
 
 .principal_lancamento__video{
@@ -15,7 +19,35 @@
     margin: 30px 0;
 }
 
-.principal_lancamento__carros__card__checkbox{
+.principal_lancamento__carros__card{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.principal_lancamento__carros__card img{
+    position: relative;
+    left: 10%;
+}
+
+.principal_lancamento__carros__card strong{
+    color: #0000CD;
+}
+
+.principal_lancamento__carros__card input{
+    width: 50px;
+}
+
+.principal_lancamento__carros__card__checkbox{
+    display: flex;   
+}
+
+.principal_lancamento__botao_comparar{
+    background-color: #0000CD;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 300px;
+    padding: 15px 0;
+    border-radius: 15px;
 }
