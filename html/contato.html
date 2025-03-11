@@ -26,67 +26,45 @@
 
     <main class="principal_contato">
 
-        <form class="principal_contato__form">
-
+        <section>
             <img class="principal_contato__form__imagem" src="../img/xls 2.2 diesel.jpg" alt="Caminhonete modelo XLS 2.2 Diesel">
-            
-            
-            <section class="principal_contato__form__campos">
+        </section>
+
+        <section>
+            <form class="principal_contato__form__campos">
 
                 <h1 class="principal_contato__form__campos__titulo">Sobre Você</h1>
-            
-                <label>
-                    <input required="" placeholder="" type="text" class="">
-                    <span>NOME*</span>
-                </label> 
 
-                <label>
-                    <input required="" placeholder="" type="email" class="">
-                    <span>EMAIL</span>
-                </label> 
+                <input required="" placeholder="NOME" type="text" class="">
+                
+                <input required="" placeholder="EMAIL" type="email" class="">
+                
+                <input required="" placeholder="CPF" type="text" class="">
+                
+                <input required="" placeholder="SOBRENOME" type="text" class="">
+                
+                <input required="" placeholder="TELEFONE" type="text" class="">
 
-                <label>
-                    <input required="" placeholder="" type="text" class="">
-                    <span>CPF</span>
-                </label> 
-
-                <label>
-                    <input required="" placeholder="" type="text" class="">
-                    <span>SOBRENOME*</span>
-                </label> 
-
-                <label>
-                    <input required="" placeholder="" type="text" class="">
-                    <span>TELEFONE*</span>
-                </label> 
-
-                <label>
-                    <input type="text" list="tipo_contato" />
-                    <span>COMO DESEJA SER CONTACTADO</span>
+                <input type="text" list="tipo_contato" placeholder="COMO DESEJA SER CONTACTADO"/>
+                
                     <datalist id="tipo_contato">
                         <option value="telefone"></option>
                         <option value="email"></option>
                     </datalist>
-                </label>
 
-                <label>
-                    <input type="text" list="meio_contato" />
-                    <span>COMO DESEJA SER CONTACTADO</span>
+                <input type="text" placeholder="MOTIVO DO CONTATO" list="meio_contato" />
+                    
                     <datalist id="meio_contato">
                         <option value="elogio"></option>
                         <option value="reclamação"></option>
                         <option value="solicitação"></option>
                     </datalist>
-                </label>
+
 
                 <button>Enviar</button>
-
-            </section>
-            
-
-        </form>
-
-        
+            </form>
+        </section>
+                    
        
     </main>
     

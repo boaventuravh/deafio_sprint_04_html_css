@@ -1,13 +1,32 @@
+.principal_contato{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .principal_contato__form{
     display: flex;
-    position: relative;
-    left: 50%;
-    translate: -25% 50%;
-    top: 40%;
+    
 
 }
 
 .principal_contato__form__campos{
     display: flex;
     flex-direction: column;
+    gap: 6px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(0,0,0,0.2);
+    padding: 6px;
+    width: 300px;
+}
+
+button{
+    padding: 5px 0;
+    width: 150px;
+    position: relative;
+    left: 50%;
 }
