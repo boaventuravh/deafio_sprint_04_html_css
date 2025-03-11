@@ -1,0 +1,13 @@
+.principal_contato__form{
+    display: flex;
+    position: relative;
+    left: 50%;
+    translate: -25% 50%;
+    top: 40%;
+
+}
+
+.principal_contato__form__campos{
+    display: flex;
+    flex-direction: column;
+}
