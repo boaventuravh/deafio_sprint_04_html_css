@@ -6,17 +6,26 @@
 
 .cabecalho{
     display: flex;
+    position: relative;
+    justify-content: left;
     align-items: center;
     padding: 10px 10px;
     font-family: "Roboto", serif;
-    font-size: 24px;
-    
+    font-size: larger;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cabecalho__logotipo{
+    width: 10vw;
+    max-width: 226px;
+    min-width: 113px;
 }
 
 .cabecalho__menu_navegacao{
     position: absolute;
-    right: 50%;
-    translate: 50%;
+    left: 50vw;
+    translate: -10vw;
 }
 
 .cabecalho__menu_navegacao__link{
