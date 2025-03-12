@@ -7,7 +7,7 @@
 .cabecalho{
     display: flex;
     position: relative;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
     font-family: "Roboto", serif;
@@ -23,9 +23,8 @@
 }
 
 .cabecalho__menu_navegacao{
-    position: absolute;
-    left: 50vw;
-    translate: -10vw;
+    position: relative;
+    right: 3vw;
 }
 
 .cabecalho__menu_navegacao__link{
