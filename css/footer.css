@@ -6,6 +6,8 @@
     font-family: "Roboto", serif;
     font-size: 21px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
     width: 100%;
     position: absolute;
@@ -19,7 +21,8 @@
 }
 
 .rodape__logotipo{
-    position: absolute;
-    left: 90%;
-    translate: 50%;
+    width: 10vw;
+    height: auto;
+    max-width: 96px;
+    min-width: 48px;
 }
