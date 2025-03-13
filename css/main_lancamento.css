@@ -17,37 +17,41 @@
 
 .principal_lancamento__carros{
     display: flex;
-    
+    justify-content: space-evenly;
 }
 
 .principal_lancamento__carros__card{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 50px;
     width: 25%;
 }
 
 .principal_lancamento__carros__card__imagem_carro{
-    
+    width: 10vw;
+    max-width: 640px;
+    min-width: 160px;
 }
 
 .principal_lancamento__carros__card__imagem_info{
     height: 36px;
-    position: relative;
-    left: 20%;
+    
 }
 
 .principal_lancamento__carros__card strong{
     color: #0000CD;
 }
 
-.principal_lancamento__carros__card input{
+.principal_lancamento__carros__card__checkbox input{
     width: 50px;
 }
 
 .principal_lancamento__carros__card__checkbox{
-    display: flex;   
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .principal_lancamento__botao_comparar{
