@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .principal_home{
+    display: grid;
+    place-items: center;
+}
+
+.principal_home__conteudo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+    row-gap: 3.5vh;
+    padding-top: auto;
+    padding-bottom: auto;
+    justify-content: center;
     align-items: center;
     font-family: "Roboto", serif;
     font-size: x-large;
 }
 
-.principal_home__imagem{
-    width: 70vw;
+.principal_home__conteudo__imagem{
+    width: 80vw;
 }
+
