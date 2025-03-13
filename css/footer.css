@@ -8,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     width: 100%;
     position: absolute;
@@ -21,7 +22,26 @@
 }
 
 .rodape__logotipo{
-    width: 10vw;
-    max-width: 96px;
-    min-width: 48px;
+    width: 96px;
+    height: 43px;
+}
+
+@media(max-width: 520px){
+
+    .rodape{
+        padding: 10px;
+    }
+
+    .rodape__logotipo{
+        width: 48px;
+        height: 21.5px;
+    }
+
+    .rodape__redes_sociais p{
+        display: none;
+    }
+
+    .rodape__redes_sociais img{
+        height: 25px;
+    }
 }
