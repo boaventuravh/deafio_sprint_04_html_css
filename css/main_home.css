@@ -3,12 +3,12 @@
 .principal_home{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
     font-family: "Roboto", serif;
     font-size: x-large;
 }
 
 .principal_home__imagem{
-    height: 70vh;
+    width: 70vw;
 }
