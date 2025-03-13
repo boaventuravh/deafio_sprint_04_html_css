@@ -39,6 +39,8 @@
 
     .cabecalho{
         align-items: center;
+        padding: 5px 5px;
+        font-size: small;
     }
 
     .cabecalho__logotipo{
