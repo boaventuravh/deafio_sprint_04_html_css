@@ -22,3 +22,14 @@
     width: 80vw;
 }
 
+@media(max-width: 768px){
+    .principal_home__conteudo{
+        font-size: small;
+    }
+}
+
+@media(max-width: 320px){
+    .principal_home__conteudo{
+        font-size: x-small;
+    }
+}
