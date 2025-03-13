@@ -42,10 +42,6 @@
         padding: 5px 5px;
         font-size: small;
     }
-
-    .cabecalho__logotipo{
-        display: none;
-    }
     
     .cabecalho__menu_navegacao{
         flex: 1;
