@@ -20,12 +20,28 @@ input{
     border-radius: 5px;
     border: 1px solid rgb(0,0,0,0.2);
     padding: 6px;
-    width: 300px;
+    width: 200px;
 }
 
 button{
+    background-color: #0000CD;
+    color: #FFFFFF;
+    font-size: small;
     padding: 5px 0;
-    width: 150px;
+    width: 100px;
+    border-radius: 5px;
     position: relative;
     left: 50%;
+}
+
+@media(max-width: 768px){
+    .principal_contato{
+        flex-direction: column;
+        padding-top: 95px;
+        padding-bottom: 15px;
+    }
+
+    .principal_contato__form__imagem{
+        width: 250px;
+    }
 }
