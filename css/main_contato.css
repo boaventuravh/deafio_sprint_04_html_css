@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding-top: 57px;
+    padding-bottom: 15px;
 }
 
 .principal_contato__form{
