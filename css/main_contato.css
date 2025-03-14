@@ -1,8 +1,9 @@
 .principal_contato{
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12.5%;
+    
 }
 
 .principal_contato__form{

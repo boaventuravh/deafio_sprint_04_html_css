@@ -4,15 +4,14 @@
     background-color: #000080;
     color: #FFFFFF;
     font-family: "Roboto", serif;
-    font-size: 21px;
+    font-size: medium;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: relative;
 }
 
 .rodape__redes_sociais{
@@ -21,9 +20,13 @@
     gap: 10px;
 }
 
+.rodape__redes_sociais img{
+    height: 37.5px;
+}
+
 .rodape__logotipo{
-    width: 96px;
-    height: 43px;
+    width: 48px;
+    height: 21.5px;
 }
 
 @media(max-width: 768px){
