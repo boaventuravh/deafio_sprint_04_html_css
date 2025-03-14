@@ -10,6 +10,7 @@
     font-family: "Roboto", serif;
     font-size: large;
     padding-top: 73.75px;
+    padding-bottom: 10px;
 }
 
 .principal_lancamento__video{
@@ -59,4 +60,38 @@
     width: 200px;
     padding: 10px 0;
     border-radius: 15px;
+}
+
+@media(max-width: 768px){
+
+    .principal_lancamento{
+        font-size: small;
+        gap: 15px 0;
+        padding-bottom: 15px;
+    }
+
+    .principal_lancamento__video{
+        height: 30vh;
+        width: 100%;
+    }
+
+    .principal_lancamento__carros{
+        flex-direction: column;
+    }
+
+    .principal_lancamento__carros__card{
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .principal_lancamento__carros__card__imagem_carro{
+        width: 180px;
+    }
+
+    .principal_lancamento__botao_comparar{
+        font-size: x-small;
+        width: 100px;
+        padding: 5px 0;
+        border-radius: 15px;
+    }
 }
