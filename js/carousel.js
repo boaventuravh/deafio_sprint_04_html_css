@@ -1,41 +1,55 @@
-const imagens = document.querySelectorAll('.fade');
-let indiceImagem = 0;
-alternarImagens();
+class Carousel {
 
-function alternarImagens(){
-    next();
-
-    setTimeout(alternarImagens, 3500);
-}
-
-function next(){
-    mudarIndice(true);
-    exibirImagemIndiceAtual();
-}
-
-function back(){
-    mudarIndice(false);
-    exibirImagemIndiceAtual();
-}
-
-function mudarIndice(aumentar){
-    aumentar ? indiceImagem++ : indiceImagem--;
+    constructor(slides){
+        this.slides = slides;
+        this.indiceImagem = 0;
     
-    if(indiceImagem > imagens.length - 1){
-        indiceImagem = 0;
+        this.alternarImagens();
     }
 
-    if(indiceImagem < 0){
-        indiceImagem = imagens.length - 1;
+
+    alternarImagens(){
+        this.next();
+
+        setTimeout(this.alternarImagens.bind(this), 3500);
     }
+
+    next(){
+        this.mudarIndice(true);
+        this.exibirImagemIndiceAtual();
+    }
+
+    back(){
+        this.mudarIndice(false);
+        this.exibirImagemIndiceAtual();
+    }
+
+    mudarIndice(aumentar){
+        aumentar ? this.indiceImagem++ : this.indiceImagem--;
+        
+        if(this.indiceImagem > slides.length - 1){
+            this.indiceImagem = 0;
+        }
+
+        if(this.indiceImagem < 0){
+            this.indiceImagem = slides.length - 1;
+        }
+
+    }
+
+    exibirImagemIndiceAtual(){
+        slides.forEach(imagem => {
+            imagem.style.display = 'none';
+        });
+
+        slides[this.indiceImagem].style.display = 'block';
+    }
+
 
 }
 
-function exibirImagemIndiceAtual(){
-    imagens.forEach(imagem => {
-        imagem.style.display = 'none';
-    });
+const slides = document.querySelectorAll('.fade');
 
-    imagens[indiceImagem].style.display = 'block';
-}
-
+document.addEventListener("DOMContentLoaded", () => {
+    new Carousel(slides); 
+});
