@@ -3,7 +3,7 @@ let carArr = [];
 class Car {   
 
     constructor(nome, preco, alturaCacamba, alturaVeiculo, alturaSolo, capacidadeCarga, motor, potencia, volumeCacamba, roda, image){
-        this.nome =nome;
+        this.nome = nome;
         this.preco = preco;
         this.alturaCacamba = alturaCacamba;
         this.alturaVeiculo = alturaVeiculo;
@@ -13,7 +13,7 @@ class Car {
         this.potencia = potencia;
         this.volumeCacamba = volumeCacamba;
         this.roda = roda;
-        
+        this.image = image;
     }
 } 
 
