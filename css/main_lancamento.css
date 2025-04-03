@@ -19,7 +19,7 @@
 }
 
 .principal_lancamento__carros{
-    display: flex;
+    display: none;
     justify-content: space-evenly;
 }
 
@@ -62,6 +62,97 @@
     border-radius: 15px;
 }
 
+/* início do código importado do modelo disponibilizado */
+ul.modelcars {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ul.modelcars li {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 400px;
+    vertical-align: top;
+    align-items: center;
+}
+
+img.photocar {
+    display: block;
+    width: 250px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1b357e;
+}
+
+
+.infocar div {
+    display: inline-block;
+}
+
+.info {
+    width: 200px;
+    vertical-align: top;
+}
+
+.textmodel {
+    display: block;
+    text-align: left;
+    color: #0000CD;
+    
+}
+.textprice {
+    display: block;
+    text-align: left;
+    
+}
+
+div#compare {
+    position: absolute;
+    display: none;
+    width: 50vw;
+    max-width: 800px;
+    min-width: 400px;
+    height: 80vh;
+    max-height: 700px;
+    min-height: 350px;
+    background: #fff;
+    top: calc(100vh - 80%);
+    left: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+    box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+}
+
+div#compare table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+  }
+
+div#compare  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+div#compare td:nth-child(1) {  
+    font-weight: 700;
+    width: 40%;
+  }
+
+div#compare tr:nth-child(even) {background-color: #f2f2f2;}
+
+/* fim do código importado do modelo disponibilizado */
+
+
 @media(max-width: 768px){
 
     .principal_lancamento{
@@ -94,5 +185,10 @@
         width: 100px;
         padding: 5px 0;
         border-radius: 15px;
+    }
+
+    /* código importado */
+    ul.modelcars li{
+        display: block;
     }
 }
