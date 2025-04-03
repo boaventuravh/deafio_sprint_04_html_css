@@ -2,47 +2,47 @@ class Carousel {
 
     constructor(slides){
         this.slides = slides;
-        this.indiceImagem = 0;
+        this.indexSlide = 0;
     
-        this.alternarImagens();
+        this.start();
     }
 
 
-    alternarImagens(){
+    start(){
         this.next();
 
-        setTimeout(this.alternarImagens.bind(this), 3500);
+        setTimeout(this.start.bind(this), 3500);
     }
 
     next(){
-        this.mudarIndice(true);
-        this.exibirImagemIndiceAtual();
+        this.switchIndex(true);
+        this.showCurrentSlide();
     }
 
     back(){
-        this.mudarIndice(false);
-        this.exibirImagemIndiceAtual();
+        this.switchIndex(false);
+        this.showCurrentSlide();
     }
 
-    mudarIndice(aumentar){
-        aumentar ? this.indiceImagem++ : this.indiceImagem--;
+    switchIndex(willIncrement){
+        willIncrement ? this.indexSlide++ : this.indexSlide--;
         
-        if(this.indiceImagem > slides.length - 1){
-            this.indiceImagem = 0;
+        if(this.indexSlide > slides.length - 1){
+            this.indexSlide = 0;
         }
 
-        if(this.indiceImagem < 0){
-            this.indiceImagem = slides.length - 1;
+        if(this.indexSlide < 0){
+            this.indexSlide = slides.length - 1;
         }
 
     }
 
-    exibirImagemIndiceAtual(){
-        slides.forEach(imagem => {
-            imagem.style.display = 'none';
+    showCurrentSlide(){
+        slides.forEach(slide => {
+            slide.style.display = 'none';
         });
 
-        slides[this.indiceImagem].style.display = 'block';
+        slides[this.indexSlide].style.display = 'block';
     }
 
 
