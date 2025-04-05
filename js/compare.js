@@ -3,19 +3,20 @@
  1 - XL Cabine Simples 2.2 4x4 MT 2022 - R$ 183.850,00
  2 - XLS 2.2 Diesel 4X4 AT 2022 - R$ 220.690,00
  3 - Storm 3.2 Diesel 4X4 AT 2022 - R$ 222.790,00
+ 
 
- */
+carArr.push(new Car('../img/XL Cabine.jpg', 'XL Cabine Simples 2.2 4x4 MT 2022',
+     511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 183850.00));
+
+carArr.push(new Car('../img/xls 2.2 diesel.jpg', 'XLS 2.2 Diesel 4X4 AT 2022',
+     511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 220690.00));
+
+carArr.push(new Car('../img/storm.jpg', 'Storm 3.2 Diesel 4X4 AT 2022', 
+    511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 222790.00));
+
+*/
 
 let carArr = [];
-
-carArr.push(new Car("../img/XL Cabine.jpg", "XL Cabine Simples 2.2 4x4 MT 2022",
-     511, 1821, 232, 1234, 2.2, 160, 1420, "Aço Estampado 16", 183850.00));
-
-carArr.push(new Car("../img/xls 2.2 diesel.jpg", "XLS 2.2 Diesel 4X4 AT 2022",
-     511, 1821, 232, 1076, 2.2, 160, 1180, "Aço Estampado 16", 220690.00));
-
-carArr.push(new Car("../img/storm.jpg", "Storm 3.2 Diesel 4X4 AT 2022", 
-    511, 1821, 232, 1040, 3.2, 200, 1180, "Liga Leve 17", 222790.00));
 
 class Car {   
 
@@ -44,13 +45,24 @@ function GetCarArrPosition(arr, carClass) {
 }
 
 function SetCarToCompare(checkbox, carClass) {
-   
+    
     if(carClass instanceof Car){       
         if(checkbox.checked){
-                
+           carArr.push(carClass);
             
         } else {
-          
+            // função anômima para remover o carro do Array
+            // base: Using indexOf(), slice(), and concat() Methods
+            // https://www.geeksforgeeks.org/how-to-remove-a-specific-item-from-an-array-in-javascript/#approach-2-using-filter-method
+            (() => {
+                
+                const index = GetCarArrPosition(carArr, carClass);
+                
+                if (index !== -1) {
+                    carArr = carArr.slice(0, index).concat(carArr.slice(index+1));
+                }                
+            })();
+            
         } 
     } else {
         throw "You need set a Car Class";
