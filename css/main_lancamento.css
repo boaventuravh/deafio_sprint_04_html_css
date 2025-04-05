@@ -19,7 +19,7 @@
 }
 
 .principal_lancamento__carros{
-    display: none;
+    display: flex;
     justify-content: space-evenly;
 }
 
