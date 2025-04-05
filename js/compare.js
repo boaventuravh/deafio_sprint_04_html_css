@@ -46,6 +46,11 @@ function GetCarArrPosition(arr, carClass) {
 
 function SetCarToCompare(checkbox, carClass) {
     
+    if(carArr.length === 2 && checkbox.checked) {
+        checkbox.checked = false;
+        alert('Não é possível selecionar 3 carros!');
+    }
+
     if(carClass instanceof Car){       
         if(checkbox.checked){
            carArr.push(carClass);
