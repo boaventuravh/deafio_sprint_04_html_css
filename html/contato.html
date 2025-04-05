@@ -30,40 +30,25 @@
             <img class="principal_contato__form__imagem" src="../img/xls 2.2 diesel.jpg" alt="Caminhonete modelo XLS 2.2 Diesel">
         </section>
 
-        <section>
-            <form class="principal_contato__form__campos">
-
-                <h1 class="principal_contato__form__campos__titulo">Sobre Você</h1>
-
-                <input required placeholder="NOME" type="text" class="">
-                
-                <input required placeholder="EMAIL" type="email" class="">
-                
-                <input required placeholder="CPF" type="text" class="">
-                
-                <input required placeholder="TELEFONE" type="text" class="">
-
-                <input type="text" list="tipo_contato" placeholder="COMO DESEJA SER CONTACTADO"/>
-                
-                    <datalist id="tipo_contato">
-                        <option value="telefone"></option>
-                        <option value="email"></option>
-                    </datalist>
-
-                <input type="text" placeholder="MOTIVO DO CONTATO" list="meio_contato" />
-                    
-                    <datalist id="meio_contato">
-                        <option value="elogio"></option>
-                        <option value="reclamação"></option>
-                        <option value="solicitação"></option>
-                    </datalist>
-                <label for="mensagem">Insira sua mensagem</label>
-                <textarea name="mensagem" id="" rows="10"></textarea>
-                
-
-                <button>Enviar</button>
+        <div class="forms">
+            
+            <h2 class="titulo">Sobre Você</h2>
+            <form onsubmit="Post(this);">
+                <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
+                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
+                <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
+                <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
+                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                <select name="contato" class="fordform" required>
+                    <option selected>COMO DESEJA SER CONTATADO</option>
+                    <option>TELEFONE</option>
+                    <option>E-MAIL</option>
+                </select>
+            <button type="submit">Enviar</button>
             </form>
-        </section>
+            
+
+        </div>
                     
        
     </main>
