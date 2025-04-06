@@ -7,31 +7,33 @@
     padding-bottom: 15px;
 }
 
-.principal_contato__form{
-    display: flex;
-}
 
-.principal_contato__form__campos{
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-}
-
-
-.fordform {
-    display: block;
-    width: 310px;
-    border: 1px solid #cccccc;
+.fordform, .fordmessage, button{
     border-radius: 10px;
-    height: 36px;
+}
+
+.fordform, .fordmessage {
+    display: block;
+    width: 25vw;
     margin: 8px 0;
+    border: 1px solid #cccccc;
+    
+}
+
+.fordform { 
+    height: 36px;    
     font-size: 13px;
     padding: 5px;
 }
 
+/* altura calculada com base nos inputs da classe fordform */
+.fordmessage {
+    height: 348px;
+    resize: none;
+}
+
 select.fordform {
-    width: 310px;
-    height: 36px;
+    
     color: #807d7d;
 }
 
@@ -43,49 +45,64 @@ select:focus-visible {
     outline: none;
 }
 
-main div {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+form {
+    display: flex;
+    
 }
 
-.forms {
-    display: block;
-    text-align: left;
+.mensagem , .dados {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;   
 }
 
-h2 {
-    text-align: left;
-    font-weight: 800;
+.dados {
+    align-items: start;
 }
 
+.mensagem{
+    align-items: end;
+    
+}
 
 button {
     background-color: #0000CD;
     color: #FFFFFF;
     font-size: small;
     padding: 5px;
-    width: 200px;
+    width: 12.5vw;
     height: 40px;
-    border-radius: 5px;
-    position: relative;
-    
 }
 
 .titulo {
-    margin-left: 8px;
+    position: relative;
+    left: 15px;
+    text-align: left;
+    font-weight: 800;
 }
 
 @media(max-width: 768px){
+
     .principal_contato{
         flex-direction: column;
         padding-top: 95px;
         padding-bottom: 15px;
     }
 
-    .principal_contato__form__imagem{
-        width: 250px;
+    form {
+        flex-direction: column;
     }
+
+    .fordform, .fordmessage, button {
+        
+        width: 85vw;
+       
+    }
+
+    .fordmessage {
+        height: 174px;
+    }
+
+    
 }

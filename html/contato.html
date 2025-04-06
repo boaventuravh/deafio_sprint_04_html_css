@@ -26,29 +26,46 @@
 
     <main class="principal_contato">
 
+        
         <section>
-            <img class="principal_contato__form__imagem" src="../img/xls 2.2 diesel.jpg" alt="Caminhonete modelo XLS 2.2 Diesel">
+            <img src="../img/xls 2.2 diesel.jpg" alt="Caminhonete modelo XLS 2.2 Diesel">
         </section>
 
-        <div class="forms">
-            
-            <h2 class="titulo">Sobre Você</h2>
+        <div>
+           
+           <h2 class="titulo">Sobre Você</h2> 
             <form onsubmit="Post(this);">
-                <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
-                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
-                <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
-                <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
-                <select name="contato" class="fordform" required>
-                    <option selected>COMO DESEJA SER CONTATADO</option>
-                    <option>TELEFONE</option>
-                    <option>E-MAIL</option>
-                </select>
-            <button type="submit">Enviar</button>
+            
+                <div class="dados">
+                    <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
+                    <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
+                    <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
+                    <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
+                    <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                    <select name="tipo-contato" class="fordform" required>
+                        <option selected>MOTIVO DO CONTATO</option>
+                        <option>ELOGIO</option>
+                        <option>RECLAMAÇÃO</option>
+                        <option>SOLICITAÇÃO</option>
+                    </select>
+                    <select name="contato" class="fordform" required>
+                        <option selected>COMO DESEJA SER CONTATADO</option>
+                        <option>TELEFONE</option>
+                        <option>E-MAIL</option>
+                    </select>
+                </div>
+                
+                <div class="mensagem">
+                    <textarea placeholder="DIGITE SUA MENSAGEM AQUI" name="mensagem"  class="fordmessage" required></textarea>
+                     <button type="submit">Enviar</button>
+                </div>
+            
             </form>
+           
+        </div>               
+        
             
 
-        </div>
                     
        
     </main>
