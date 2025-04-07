@@ -48,7 +48,7 @@ class Carousel {
 
 }
 
-const slides = document.querySelectorAll('.fade');
+const slides = document.querySelectorAll('.slide');
 
 document.addEventListener("DOMContentLoaded", () => {
     new Carousel(slides); 
