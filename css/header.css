@@ -34,12 +34,16 @@
     
 }
 
-.cabecalho__menu_navegacao__link{
+.cabecalho__menu_navegacao__link{    
     float: left;
     display: block;
     text-decoration: none;
     margin: 0px 20px;
     color: #0000CD;
+}
+
+.cabecalho__menu_navegacao__link:hover{    
+    color: #0066CD;
 }
 
 @media(max-width: 768px){

@@ -22,6 +22,11 @@
 
 .rodape__redes_sociais img{
     height: 37.5px;
+    transition: transform .5s;
+}
+
+.rodape__redes_sociais img:hover{
+    transform: scale(1.2);
 }
 
 .rodape__logotipo{
