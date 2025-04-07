@@ -25,6 +25,14 @@ button{
     width: 200px;
     padding: 10px 0;
     border-radius: 15px;
+    transition: transform .9s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #101094;
+    transition: .6s;
+    transform: scale(1.1);
 }
 
 /* início do código importado do modelo disponibilizado */
@@ -42,6 +50,11 @@ ul.modelcars li {
     width: 33vw;
     vertical-align: top;
     align-items: center;
+    transition: transform .9s;
+}
+
+ul.modelcars li:hover {
+    transform: scale(1.1);
 }
 
 img.photocar {
@@ -53,6 +66,7 @@ img.photocar {
     width: 30px;
     height: 30px;
     border: 1px solid #1b357e;
+    cursor: pointer;
 }
 
 
