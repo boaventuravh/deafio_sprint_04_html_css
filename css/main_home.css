@@ -18,10 +18,17 @@
 }
 
 .slide {
-    flex-direction: column;
-    align-items: center;
+    
     animation-name: fade;
     animation-duration: 1.5s;
+  }
+
+  .slide a{
+    text-decoration: none;
+    color: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   @keyframes fade {
@@ -29,7 +36,7 @@
     to {opacity: 1}
   }
 
-.principal_home__conteudo__imagem{
+.image{
     width: 80vw;
 }
 
