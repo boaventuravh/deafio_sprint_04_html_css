@@ -1,22 +1,3 @@
-/*
-
- 1 - XL Cabine Simples 2.2 4x4 MT 2022 - R$ 183.850,00
- 2 - XLS 2.2 Diesel 4X4 AT 2022 - R$ 220.690,00
- 3 - Storm 3.2 Diesel 4X4 AT 2022 - R$ 222.790,00
- 
-
-carArr.push(new Car('../img/XL Cabine.jpg', 'XL Cabine Simples 2.2 4x4 MT 2022',
-     511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 183850.00));
-
-carArr.push(new Car('../img/xls 2.2 diesel.jpg', 'XLS 2.2 Diesel 4X4 AT 2022',
-     511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 220690.00));
-
-carArr.push(new Car('../img/storm.jpg', 'Storm 3.2 Diesel 4X4 AT 2022', 
-    511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 222790.00));
-
-*/
-
-let carArr = [];
 
 class Car {   
 
@@ -134,3 +115,28 @@ function UpdateCompareTable() {
 
     
 }
+let carArr = [];
+
+const car0 = new Car('../img/XL Cabine.jpg', 'XL Cabine Simples 2.2 4x4 MT 2022',
+    511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'R$ 183.850,00');
+
+const car1 = new Car('../img/xls 2.2 diesel.jpg', 'XLS 2.2 Diesel 4X4 AT 2022',
+    511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'R$ 220.690,00');
+
+const car2 = new Car('../img/storm.jpg', 'Storm 3.2 Diesel 4X4 AT 2022', 
+    511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 'R$ 222.790,00');
+
+
+const availableCars = [car0, car1, car2];
+
+const checkboxes = document.getElementsByClassName('checkbox');
+
+for (let i = 0; i < checkboxes.length; i++) {
+    const chckbx = checkboxes[i];
+    const car = availableCars[i];
+    chckbx.addEventListener('change', () => {SetCarToCompare(chckbx, car)});
+    
+}
+
+
+
