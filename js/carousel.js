@@ -11,7 +11,7 @@ class Carousel {
     start(){
         this.next();
 
-        setTimeout(this.start.bind(this), 3500);
+        setTimeout(this.start.bind(this), 2500);
     }
 
     next(){
@@ -42,7 +42,7 @@ class Carousel {
             slide.style.display = 'none';
         });
 
-        slides[this.indexSlide].style.display = 'block';
+        slides[this.indexSlide].style.display = 'flex';
     }
 
 
