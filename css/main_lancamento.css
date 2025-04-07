@@ -35,7 +35,6 @@ button:hover{
     transform: scale(1.1);
 }
 
-/* início do código importado do modelo disponibilizado */
 ul.modelcars {
     display: flex;
     text-align: center;
@@ -143,8 +142,6 @@ div#compare td:nth-child(1) {
 
 div#compare tr:nth-child(even) {background-color: #f2f2f2;}
 
-/* fim do código importado do modelo disponibilizado */
-
 
 @media(max-width: 768px){
 
@@ -173,7 +170,6 @@ div#compare tr:nth-child(even) {background-color: #f2f2f2;}
         border-radius: 15px;
     }
 
-    /* código importado */
     ul.modelcars {
         flex-direction: column;
     }
