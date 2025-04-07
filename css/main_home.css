@@ -17,8 +17,32 @@
     font-size: large;
 }
 
-.carousel {
+.carousel-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     transition: transform .9s;
+}
+
+.carousel-container:hover{
+    transform: scale(1.03);
+}
+
+.button {
+    background-color: #000080;
+    color: #ffffff;
+    height: 45px;
+    width: 30px;
+    opacity: 0.85;
+    border-radius: 10px;
+}
+
+.button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.carousel {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -32,7 +56,7 @@
   }
 
   .carousel:hover{
-    transform: scale(1.1);
+    
 }
 
 

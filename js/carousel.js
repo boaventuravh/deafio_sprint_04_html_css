@@ -13,6 +13,12 @@ class SlideShow {
     constructor(slides){
         this.slides = slides;
         this.indexSlide = 0;
+        
+        this.buttonRight = document.querySelector('.right');
+        this.buttonRight.addEventListener("click", () => {this.next()});
+
+        this.buttonLeft = document.querySelector('.left');
+        this.buttonLeft.addEventListener("click", () => {this.back()});
     
         this.showCurrentSlide();
         this.start();
