@@ -36,7 +36,8 @@
 
 .fordterms{
     font-size: small;
-    color: #808080; 
+    color: #808080;
+    padding: 4px 0; 
 }
 
 select.fordform {
@@ -75,6 +76,7 @@ form {
 
 .mensagem div{
     display: flex;
+    align-items: center;
 }
 
 button {
@@ -113,7 +115,7 @@ button:hover{
         flex-direction: column;
     }
 
-    .fordform, .fordmessage, button {
+    .fordform, .fordmessage, .fordterms, button {
         
         width: 85vw;
        
