@@ -34,14 +34,17 @@
     resize: none;
 }
 
-.fordterms{
+.info {
     font-size: small;
     color: #808080;
     padding: 4px 0; 
 }
 
-select.fordform {
-    
+.option p{
+    font-size: medium;
+}
+
+select.fordform {    
     color: #807d7d;
 }
 
@@ -76,7 +79,8 @@ form {
 
 .mensagem div{
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding: 5px 0;
 }
 
 button {
@@ -114,10 +118,8 @@ button:hover{
         flex-direction: column;
     }
 
-    .fordform, .fordmessage, .fordterms, button {
-        
-        width: 85vw;
-       
+    .fordform, .fordmessage, .fordterms, button {        
+        width: 85vw;       
     }
 
     .fordmessage {
