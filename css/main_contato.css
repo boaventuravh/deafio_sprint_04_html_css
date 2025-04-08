@@ -95,8 +95,13 @@ button {
 
 button:hover{
     cursor: pointer;
-    background-color: #0066CD;
-    
+    background-color: #0066CD;    
+}
+
+button:disabled{
+    cursor: default;
+    background-color: #808080;
+    opacity: 0.7;
 }
 
 .titulo {
