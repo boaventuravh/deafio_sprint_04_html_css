@@ -86,14 +86,13 @@ button {
     padding: 5px;
     width: 12.5vw;
     height: 40px;
-    transition: transform .9s;
+    transition: background-color .9s;
 }
 
 button:hover{
     cursor: pointer;
-    background-color: #101094;
-    transition: .6s;
-    transform: scale(1.1);
+    background-color: #0066CD;
+    
 }
 
 .titulo {
