@@ -13,11 +13,13 @@
 }
 
 .fordform, .fordmessage {
-    display: block;
-    width: 25vw;
     margin: 8px 0;
-    border: 1px solid #cccccc;
-    
+    border: 1px solid #cccccc;    
+}
+
+.fordform, .fordmessage, .fordterms{
+    display: block;
+    width: 25vw;  
 }
 
 .fordform { 
@@ -30,6 +32,11 @@
 .fordmessage {
     height: 348px;
     resize: none;
+}
+
+.fordterms{
+    font-size: small;
+    color: #808080; 
 }
 
 select.fordform {
@@ -64,6 +71,10 @@ form {
 .mensagem{
     align-items: end;
     
+}
+
+.mensagem div{
+    display: flex;
 }
 
 button {
