@@ -207,6 +207,10 @@ div#compare tr:nth-child(even) {background-color: #f2f2f2;}
         width: 200px;
     }
 
+    ul.modelcars li:hover {
+    transform: none;
+    }
+
     div#compare {    
     top: 90%; 
     left: 50%; 

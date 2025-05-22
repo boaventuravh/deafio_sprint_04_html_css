@@ -78,7 +78,7 @@ class SlideShow {
 
 const carouselArr = [
     new Carousel("../img/imagem_1.jpg", "../img/imagem_1_crop.jpg",
-        "Esta é a nova Ranger Ford 2022. Verifique novidades", "./lancamento.html"),
+        "Esta é a nova Ranger Ford 2022.", "./lancamento.html"),
 
     new Carousel("../img/imagem_2.jpg", "../img/imagem_2_crop.jpg",
         "Mais de 100 anos de história", "./lancamento.html"),
