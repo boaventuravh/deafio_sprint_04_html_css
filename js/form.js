@@ -40,14 +40,41 @@ function sendMessage() {
         dados[id] = campo.value;
     });
 
-    // Envia com Axios para o backend
+     const msgDiv = document.getElementById("mensagemEnvio");
+    
     axios.post("http://localhost:3001/complaints", dados)
-        .then(response => {
-            alert("Mensagem enviada com sucesso!");
-            console.log(response.data);
+        .then(response => {            
+            msgDiv.innerHTML = "&#9745;\nMensagem enviada com sucesso!";
+            msgDiv.style.display = "block"
+            msgDiv.classList.remove("erro");
+
+            fieldIds.forEach(id => {
+                const campo = document.getElementById(id);
+                campo.value = "";
+            });
+
+            document.getElementById("motivoContato").selectedIndex = 0;
+            document.getElementById("meioContato").selectedIndex = 0;
+
+            
+            agree.checked = false;
+            changeButtonState(false);
+
+            setTimeout(() => {
+                msgDiv.textContent = "";
+                msgDiv.style.display = "none"
+            }, 3000);
+        
         })
         .catch(error => {
-            alert("Erro ao enviar a mensagem.");
+            msgDiv.innerHTML = "&#9746;\nErro ao enviar a mensagem. Tente novamente mais tarde.";
+            msgDiv.classList.add("erro");
+            msgDiv.style.display = "block"
             console.error(error);
+
+            setTimeout(() => {
+                msgDiv.textContent = "";
+                msgDiv.style.display = "none"
+            }, 3000);
         });
 }
