@@ -46,6 +46,22 @@
     color: #0066CD;
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #0000CD;
+}
+
 @media(max-width: 768px){
 
     .cabecalho{
@@ -55,13 +71,48 @@
     }
     
     .cabecalho__menu_navegacao{
+        
+        position: fixed;
+        left: -150%;
+        top: 70px;
+        gap: 0;
+        background-color: #0000CD;
         flex: 1;
+        transition: 0.5s;
     }
 
     .cabecalho__menu_navegacao__link{
         float: none;
-        width: 100%;
-        margin: 10px 0;
+        width: 100vw;
+        margin: 16px 0;
         text-align: center;
+        color: white;
     }
+
+    .cabecalho__menu_navegacao.active{
+        left: 0;        
+    }
+
+    .cabecalho__menu_navegacao__link:hover{    
+    color: whitesmoke;
+}
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
 }
